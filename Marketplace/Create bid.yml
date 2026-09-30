@@ -1,0 +1,28 @@
+info:
+  name: Create bid
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{url}}/items/:id/bids"
+  params:
+    - name: id
+      value: "1790759703635"
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "amount": 102000
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3OTA3NTk5OTUxMjQsInVzZXJuYW1lIjoidmlrYS11eC11aSIsImlhdCI6MTc5MDc1OTk5NSwiZXhwIjoxNzkwODQ2Mzk1fQ.MTQaVraJwRF2GAPx6U7s0vhfBJ1Tt4lhdcuemGGG7qE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
