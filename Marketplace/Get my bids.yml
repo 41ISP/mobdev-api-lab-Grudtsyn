@@ -1,0 +1,18 @@
+info:
+  name: Get my bids
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: "{{url}}/bids/my"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3OTA3NTk5OTUxMjQsInVzZXJuYW1lIjoidmlrYS11eC11aSIsImlhdCI6MTc5MDc1OTk5NSwiZXhwIjoxNzkwODQ2Mzk1fQ.MTQaVraJwRF2GAPx6U7s0vhfBJ1Tt4lhdcuemGGG7qE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

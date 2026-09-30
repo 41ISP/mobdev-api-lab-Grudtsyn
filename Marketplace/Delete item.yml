@@ -1,0 +1,22 @@
+info:
+  name: Delete item
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: "{{url}}/items/:id"
+  params:
+    - name: id
+      value: "1790759586137"
+      type: path
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3OTA3NTkxMTE5OTcsInVzZXJuYW1lIjoiaW9hbmdyb3puaXkyMjgiLCJpYXQiOjE3OTA3NTkxMTIsImV4cCI6MTc5MDg0NTUxMn0.FOkxPyFRY-EhSnJa6gn3VFUYt9K1X0mhYVOAJTGtWbY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
